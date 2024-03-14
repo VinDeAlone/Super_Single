@@ -9,8 +9,8 @@ services:
         - 8084:8052
      environment:
         SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:4306/supersingledb?useSSL=false
-        SPRING_DATASOURCE_USERNAME: admin
-        SPRING_DATASOURCE_PASSWORD: admin@123
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: root@123
         SPRING_DATA_MONGODB_HOST: host.docker.internal
         SPRING_DATA_MONGODB_PORT: 2717
         SPRING_DATAMONGODB_DATABASE: supersingledb
