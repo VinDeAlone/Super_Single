@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   supersingleuserserviceapp:
-     image: vindealone/supersingleuserserviceimage:1.1.2
+     image: vindealone/supersingleuserserviceimage:1.1.3
      container_name: supersingleuserserviceappcontainer
      restart: unless-stopped
      ports:
