@@ -25,7 +25,7 @@ pipeline{
       }
       stage("Run docker container"){
          steps{
-            powershell "docker run -p 8052:8052 --name supersingleuserservicecontainer vindealone/supersingleuserserviceimage:1.1.1"
+            powershell "docker-compose up"
          }
       }
    }

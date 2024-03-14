@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  supersingleuserserviceapp:
+     image: vindealone/supersingleuserserviceimage:1.1.1
+     container_name: supersingleuserserviceappcontainer
+     restart: unless-stopped
+     ports:
+        - 8052:8052
+     environment:
+        SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/supersingledb?useSSL=false
+        SPRING_DATASOURCE_USERNAME: admin
+        SPRING_DATASOURCE_PASSWORD: admin@123
+        SPRING_DATA_MONGODB_HOST: host.docker.internal
+        SPRING_DATA_MONGODB_PORT: 2717
+        SPRING_DATAMONGODB_DATABASE: supersingledb
+     depends_on:
+        - supersingleuserservicemysqldb
+        - supersingleuserservicemongodb
+        
+        
+  supersingleuserservicemysqldb:
+     image: mysql
+     container_name: supersingleuserservicemysqldbcontainer
+     restart: unless-stopped
+     ports:
+        - 3306:3306
+     environment:
+        MYSQL_ROOT_PASSWORD: root@123
+        MYSQL_DATABASE: supersingledb
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: admin@123
+        
+        
+  supersingleuserservicemongodb:
+     image: mongo
+     container_name: supersingleuserservicemongodbcontainer
+     restart: unless-stopped
+     ports:
+        - 2717:27017
+     environment:
+        MONGO_INITDB_DATABASE: supersingledb
+
+
+

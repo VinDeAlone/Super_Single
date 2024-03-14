@@ -1,0 +1,26 @@
+
+
+server:
+   port: 8052
+
+spring:
+   application:
+      name: userService
+   
+   datasource:
+      url: jdbc:mysql://localhost:3306/supersingledb?useSSL=false
+      username: root
+      password: StrangeVin@1000
+      driver-class-name: com.mysql.cj.jdbc.Driver
+   jpa:
+      database-platform: org.hibernate.dialect.MySQLDialect
+      show-sql: true
+      hibername:
+         ddl-auto: update
+         
+   data:
+      mongodb:
+         host: localhost
+         port: 27017
+         database: supersingledb
+      
