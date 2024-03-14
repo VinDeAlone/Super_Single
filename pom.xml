@@ -63,7 +63,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>userService_superSingle</finalName>
+		<finalName>userService-superSingle</finalName>
 	</build>
 
 </project>

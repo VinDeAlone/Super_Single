@@ -12,7 +12,7 @@ pipeline{
       }
       stage("Build docker image"){
          steps{
-            powershell "docker build -t vindealone/supersingleuserserviceimage:1.1.1"
+            powershell "docker build -t vindealone/supersingleuserserviceimage:1.1.1 ."
          }
       }
       stage("Upload image to dockerhub"){
