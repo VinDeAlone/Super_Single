@@ -8,15 +8,15 @@ spring:
       name: userService
    
    datasource:
-      url: jdbc:mysql://localhost:3306/supersingledb?useSSL=false&allowPublicKeyRetrieval=true
+      url: jdbc:mysql://localhost:3306/demodbb?useSSL=false
       username: root
       password: StrangeVin@1000
       driver-class-name: com.mysql.cj.jdbc.Driver
    jpa:
       database-platform: org.hibernate.dialect.MySQLDialect
-      show-sql: true
-      hibername:
+      hibernate:
          ddl-auto: update
+      show-sql: true
          
    data:
       mongodb:

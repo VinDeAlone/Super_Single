@@ -12,6 +12,7 @@ import com.Super_Single.userService.repositories.UserRepository;
 @Service
 public class UserServiceImpl implements UserService {
 	
+	
 	@Autowired
 	private UserRepository repo;
 	

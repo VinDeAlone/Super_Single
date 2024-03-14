@@ -29,6 +29,7 @@ public class UserServiceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("Server started on port : 8052");
+		
 		saveBirthCheckPoints();
 		saveUsers();
 	}
