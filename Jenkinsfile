@@ -20,7 +20,9 @@ pipeline{
             }
         }
         stage("Start container"){
-            powershell "docker-compose up"
+            steps{
+                powershell "docker-compose up"
+            }
         }
     }
 }

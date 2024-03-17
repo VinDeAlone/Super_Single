@@ -3,5 +3,7 @@ version: '3.8'
 services:
    app:
       image: vindealone/supersingleclientimage:0.0.1
+      container_name: supersingleclientcontainer
+      restart: unless-stopped
       ports:
          - 8081:3000
