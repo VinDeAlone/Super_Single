@@ -12,7 +12,7 @@ pipeline{
       }
       stage("Build docker image"){
          steps{
-            powershell "docker build -t vindealone/supersingleuserserviceimage:1.1.3 ."
+            powershell "docker build -t vindealone/supersingleuserserviceimage:1.1.4 ."
          }
       }
       stage("Upload image to dockerhub"){
@@ -20,7 +20,7 @@ pipeline{
             withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerpwd')]) {
                powershell "docker login -u vindealone -p ${dockerpwd}"
             }
-            powershell "docker push vindealone/supersingleuserserviceimage:1.1.3"
+            powershell "docker push vindealone/supersingleuserserviceimage:1.1.4"
          }
       }
       stage("Run docker container"){
