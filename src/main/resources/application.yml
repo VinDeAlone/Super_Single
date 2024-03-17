@@ -8,7 +8,7 @@ spring:
       name: userService
    
    datasource:
-      url: jdbc:mysql://localhost:3306/demodbb?useSSL=false
+      url: jdbc:mysql://localhost:3306/supersingledb?useSSL=false
       username: root
       password: StrangeVin@1000
       driver-class-name: com.mysql.cj.jdbc.Driver

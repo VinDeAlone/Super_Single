@@ -45,13 +45,13 @@ public class User {
 	private String dosh;
 	
 	@Column(name = "first_name")
-	private String fName;
+	private String firstName;
 	
 	@Column(name = "middle_name")
-	private String mName;
+	private String middleName;
 	
 	@Column(name = "last_name")
-	private String lName;
+	private String lastName;
 	
 	@Column(name = "birth_date")
 	private String bdate;
@@ -109,7 +109,7 @@ public class User {
 	}
 
 	public User(int id, String gender, String mobile, String email, String relegion, String cast, String subcast,
-			String gotra, String dosh, String fName, String mName, String lName, String bdate, int age, int height,
+			String gotra, String dosh, String firstName, String middleName, String lastName, String bdate, int age, int height,
 			String disability, String country, String state, String city, String maritalStatus, String familyStatus,
 			String familyType, String familyType2, String education, String employment, String occupation, String salary,
 			String workLocation, int tableId) {
@@ -123,9 +123,9 @@ public class User {
 		this.subcast = subcast;
 		this.gotra = gotra;
 		this.dosh = dosh;
-		this.fName = fName;
-		this.mName = mName;
-		this.lName = lName;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
 		this.bdate = bdate;
 		this.age = age;
 		this.height = height;

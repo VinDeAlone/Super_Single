@@ -16,9 +16,9 @@ public class UserDTO {
 	private String subcast;
 	private String gotra;
 	private String dosh;
-	private String fName;
-	private String mName;
-	private String lName;
+	private String firstName;
+	private String middleName;
+	private String lastName;
 	private String bdate;
 	private int age;
 	private int height;
@@ -39,7 +39,7 @@ public class UserDTO {
 		super();
 	}
 	public UserDTO(String gender, String mobile, String email, String relegion, String cast, String subcast,
-			String gotra, String dosh, String fName, String mName, String lName, String bdate, int age, int height,
+			String gotra, String dosh, String firstName, String middleName, String lastName, String bdate, int age, int height,
 			String disability, String country, String state, String city, String maritalStatus, String familyStatus,
 			String familyType, String familyType2, String education, String employment, String occupation, String salary,
 			String workLocation) {
@@ -52,9 +52,9 @@ public class UserDTO {
 		this.subcast = subcast;
 		this.gotra = gotra;
 		this.dosh = dosh;
-		this.fName = fName;
-		this.mName = mName;
-		this.lName = lName;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
 		this.bdate = bdate;
 		this.age = age;
 		this.height = height;
