@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Checkout from git"){
             steps{
-                checkout scmGit(branches: [[name: '*/client']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/VinDeAlone/Super_Single']])
+                checkout scmGit(branches: [[name: '*/client2']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/VinDeAlone/Super_Single']])
             }
         }
         stage("Build docker image"){
