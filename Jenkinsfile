@@ -19,10 +19,5 @@ pipeline{
                 powershell "docker push vindealone/supersingleclientimage:0.0.1"
             }
         }
-        stage("Start container"){
-            steps{
-                powershell "docker-compose up"
-            }
-        }
     }
 }
