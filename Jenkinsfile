@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Build docker image"){
             steps{
-                powershell "docker build -t vindealone/supersingleclientimage:0.0.1 ."
+                powershell "docker build -t vindealone/supersingleclientimage:0.0.2 ."
             }
         }
         stage("Upload image to docker"){
@@ -16,7 +16,7 @@ pipeline{
                 withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerpwd')]) {
                     powershell "docker login -u vindealone -p ${dockerpwd}"
                 }
-                powershell "docker push vindealone/supersingleclientimage:0.0.1"
+                powershell "docker push vindealone/supersingleclientimage:0.0.2"
             }
         }
     }
